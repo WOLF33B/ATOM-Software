@@ -29,7 +29,8 @@ ATOM operates on a **Staggered Release Model**.
 * **Dynamic:** The software dynamically re-adjusts to each connected device.
 * **Profile Management:** Built-in profile manager for individual slots (if supported) and a global mapping profile (separate from settings) that is easy to save, load, and share with other PCs.
 * **Background Friendly:** Supports running in the background with an overlay for monitoring. It is extremely lightweight (performance may vary based on hardware communication speed) and offers multiple "Performance vs. Quality" modes.
-* **LoopMIDI Compatible:** Allows for easy connection and auto-launch for LoopMIDI users (LoopMIDI software must be downloaded separately).
+* **LoopMIDI Compatible:** Allows output as MIDI devices and with easy connection and auto-launch/auto-close for loopmidi users. 
+  *(Note: loopMIDI is a separate software created by Tobias Erichsen. It is not included in ATOM and must be downloaded installed separately. This compatibility feature is provided as a convenience and may be removed in future versions if requested by the original creator.)*
 
 ## 🛠️ Getting Started (For DIY Users)
 If you are building your own mixer, follow these steps to use ATOM:
