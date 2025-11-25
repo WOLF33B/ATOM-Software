@@ -1,7 +1,7 @@
 RedWerewolf Studio Software License
 Version 1.2
 
-Copyright (c) 2024 wolf33b, RedWerewolf Studio. All rights reserved.
+Copyright (c) 2025 wolf33b, RedWerewolf Studio. All rights reserved.
 
 Everyone is permitted to download, share, and use this software, but strict adherence to the non-tampering and non-commercial distribution terms is required. By coming into possession of this software, you agree to the following terms:
 
@@ -15,13 +15,21 @@ Everyone is permitted to download, share, and use this software, but strict adhe
    - The copy is distributed 100% free of charge.
    - You do not charge any fee for the distribution, installation, setup, or configuration of this software.
    - The software is distributed in its original, unaltered form.
+   - You include a copy of this License file with every copy of the software you distribute.
 
-1.3 Commercial Bundling and No Selling:
+   1.3 Commercial Bundling and No Selling:
    You are strictly prohibited from selling, renting, leasing, or placing this software behind a paywall as a standalone product. However, you are PERMITTED to bundle this software with other paid commercial products or services (including products that rely on this software to function), provided that:
    - This software is included in the bundle at no extra cost to the user.
    - The price charged for the bundle is solely attributed to the other products or services, and not to this software.
-   - You do not claim to be selling this software or as the creator or maker of this software.
+   - You do not claim to be the creator or maker of this software.
 
+   1.4 Mandatory Attribution and Visibility:
+   If you distribute this software, whether alone or bundled, you must not remove, modify, or obscure any copyright notices, credits, watermarks, splash screens, or "About" and any similar windows present in the software.
+   - If you bundle this software, you must explicitly acknowledge "RedWerewolf Studio" or "wolf33b" in your product's documentation or credits.
+   - You may not use overlay windows or other methods to hide the software's identity or origin while it is running.
+
+   1.5 Proper Attribution vs. Implied Affiliation:
+   You are permitted and encouraged to use the names "RedWerewolf Studio" or "wolf33b" for the purpose of giving credit, attribution, or truthfully identifying the software (e.g., "Powered by RedWerewolf Studio" or "utilizing wolf33b software"). However, you are prohibited from using these names or logos in any manner that falsely implies an endorsement, sponsorship, official partnership, or commercial affiliation with RedWerewolf Studio, unless explicitly authorized by wolf33b or the original creator.
 
 2. STRICT RESTRICTIONS
 
@@ -61,3 +69,25 @@ Everyone is permitted to download, share, and use this software, but strict adhe
 8. ACCEPTANCE OF TERMS
 
    Possession Deemed Acceptance: By downloading, installing, using, or knowingly retaining a copy of this software on any storage media, you accept and agree to be bound by the terms of this License. If you do not agree to these terms, you are prohibited from using the software and must delete it immediately.
+
+9. CREATOR'S COVENANT OF PERPETUAL FREEDOM
+
+   Binding Commitment by the Creator: The Copyright Holder (wolf33b) and any future owners of this intellectual property hereby irrevocably covenant that all future versions, updates, or successors to this software will be made available to the public free of charge under this License or a substantially similar free license.
+   - No Paywalls: The core software shall never be permanently restricted behind a paywall.
+   - Allowed Delays (Early Access): The Creator reserves the right to charge for "Early Access" to new updates or versions, provided that the exact same version is released to the public for free within a reasonable time period, not exceeding 2 years. This obligation is waived only if the release is prevented by circumstances beyond reasonable control, such as natural disasters, accidental loss of data or source code, death or incapacity of the creator, or other force majeure events.
+   - Premium Services: The Creator may charge for premium services (e.g., faster delivery of updates, priority support, or supplemental features/plugins), provided that these paid extras do not disable, restrict, or remove the core functionality of the main software executable.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A PERSONAL NOTE FROM THE CREATOR (WOLF33B)
+
+I created this software to be helpful to everyone, not to be greedy. Please use it freely to create content, build your business, or learn.
+
+All I ask in return is respect and only respect:
+1. Respect the Code: Please do not hack, tamper with, reverse engineer, or break the software. It is already free. Please do not try to create a clone of it.
+2. Respect the Work: Please do not hide the origin of this work.
+3. Respect the Creator: Please keep negative or destructive comments to yourself rather than shaming me in public.
+
+I promise to never betray your trust by locking the core version of this software behind a paywall. Software with this license WILL be FREE and ALWAYS be FREE.
+
+Enjoy using it!
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
