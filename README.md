@@ -1,59 +1,67 @@
 # ATOM (Atmega To Open Mapping)
 
-**ATOM** is a specialized control software designed to bridge the gap between analog mixer and digital software. 
+**ATOM** is a specialized control software designed to bridge the gap between analog mixers and digital software.
 
-Originally developed exclusively for the **RMA devices (Redstudio Mixer Analog)**, ATOM now free for anyone both personall and commercial use. Starting with version 1.6, the core software is now available to the public, allowing third-party developers and DIY enthusiasts to build their own custom mixers without needing to code their own control software from scratch.
+Originally developed exclusively for **RMA devices (Redstudio Mixer Analog)**, ATOM is now free for anyone to use for both personal and commercial purposes. Starting with version 1.6, the core software is available to the public, allowing third-party developers and DIY enthusiasts to build their own custom mixers without needing to code their own control software from scratch.
 
 ## 🎛️ What is ATOM?
+ATOM allows you to map physical hardware controls (faders, knobs, switches sending analog data) based on Atmega microcontrollers (like Arduino) to a single unified software interface. It then re-streams this data to various protocols, such as the Reaper API or MIDI.
 
-ATOM allows you to map physical hardware controls (faders, knobs, switches that send analog data) based on Atmega microcontrollers(like arduino) to a single unified software that re stream to many protocol like Reaper api or midi. It handles the communication from what and to who, letting you built any kind of mixer you want. a single analog. button that emulate a mixer. or straight up to 10 individual mixer with indiviual output(more are supported but not guarantee play nice)
+It handles the communication "from what" and "to whom," letting you build any kind of mixer you want—from a single analog button that emulates a mixer function, to a complex setup with up to 10 individual mixers with individual outputs (more are supported, but stability is not guaranteed).
 
 ## 🚀 Release Channels & Compatibility
-
-ATOM operates on a **Staggered Release Model**. 
+ATOM operates on a **Staggered Release Model**.
 
 | Feature | RMA Owner (Official Hardware) | Public / DIY User |
 | :--- | :--- | :--- |
 | **Current Version** | 1.7.2.0 | 1.6.1.0 |
 | **Updates** | Immediate | Delayed (Catch-up cycle) |
-| **Firmware** | Official Proprietary Firmware | D.I.Y/ any Thirdparty |
-| **RMA Premium Features** | ✅ Supported | 🔒 Not supported |
+| **Firmware** | Official Proprietary Firmware | DIY / Third-party |
+| **RMA Extra Features** | ✅ Supported | 🔒 Not supported |
 
-**Note:** While public versions are currently a few steps behind the  RMA user, the roadmap aims to synchronize both versions in the near future.
+**Note:** While public versions are currently a few steps behind the RMA user release, the roadmap aims to synchronize both versions in the near future.
 
 ## ✨ Key Features
-* **Universal Mapping:** flexible protocol to map custom DIY hardware inputs or virtual input(non official firmware can make virtual analog slider that doens't have physical slider) to any supported output via ATOM interface.
-* **Universal Version forever:** Any Version are design to always compatible with newer or older firmware. no matter the software version or the firmware version you working on. it will guarantee to work seamlessly(exlude missing feature). update are basically optional even if tutorial and demo firmware based on newer software
-* **Visual Feedback:** Real-time metering and state monitoring for your hardware .
-* **DIY Friendly:** Includes a "Demo Firmware" and tutorial file to get your Atmega chip talking to ATOM quickly.
-* **Dynamic:** Software will dyanamically re adjust to each devices.
-* **Profile both hardware and software:** built in profile manager for each profile slot(if supported) and a mapping profile(seperate from setting) that easy to save, load and share to other pc
-* **Background friendly:** support running on background with a overlay for monitoring and very lightweight(perfromance may vary based on how hardware communicated to software) with extra multiple performance to quality mode
-* **Loopmidi compatible:** allow easy connect and auto lauch for loopmidi user(software need to be download seperately)
-
+* **Universal Mapping:** Flexible protocol to map custom DIY hardware inputs or virtual inputs (non-official firmware can create virtual analog sliders without physical hardware) to any supported output via the ATOM interface.
+* **Universal Version Compatibility:** The software is designed to be compatible with newer or older firmware. Regardless of the software or firmware version you are working on, it is guaranteed to work seamlessly (excluding missing features). Updates are optional, even if tutorials and demo firmware are based on newer software versions.
+* **Visual Feedback:** Real-time metering and state monitoring for your hardware.
+* **DIY Friendly:** Includes "Demo Firmware" and a tutorial file to get your Atmega chip talking to ATOM quickly.
+* **Dynamic:** The software dynamically re-adjusts to each connected device.
+* **Profile Management:** Built-in profile manager for individual slots (if supported) and a global mapping profile (separate from settings) that is easy to save, load, and share with other PCs.
+* **Background Friendly:** Supports running in the background with an overlay for monitoring. It is extremely lightweight (performance may vary based on hardware communication speed) and offers multiple "Performance vs. Quality" modes.
+* **LoopMIDI Compatible:** Allows for easy connection and auto-launch for LoopMIDI users (LoopMIDI software must be downloaded separately).
 
 ## 🛠️ Getting Started (For DIY Users)
-
 If you are building your own mixer, follow these steps to use ATOM:
 
 1.  **Download the Software:** Check the [Releases] tab for the latest Public version.
-2.  for quick try of the software **Flash the Demo Firmware:** * Navigate to the `/firmware/demo` folder
-3.  **Connect:** Plug your hardware via USB/Serial.
-4.  Upload the `.ino` file to your Atmega compatible board via aruino uno(use latest version).
-5.  **Configure:** Launch ATOM. The software should recognize the Demo Firmware signature and allow basic mapping(demo are not compatible with saving a profile).
+2.  **Flash the Demo Firmware:** (For a quick trial) Navigate to the `/firmware/demo` folder.
+3.  **Connect:** Plug your hardware in via USB/Serial.
+4.  **Upload:** Upload the `.ino` file to your Atmega-compatible board (e.g., Arduino Uno) using the latest Arduino IDE.
+5.  **Configure:** Launch ATOM. The software should recognize the Demo Firmware signature and allow basic mapping (Note: Demo firmware does not support saving profiles to the chip).
+
 *Please check the `/firmware/demo/wiring/` folder for the wiring diagram required for the Demo Firmware.*
 
-## 🔒 RMA official Firmware Features
-Certain functions and deep-level hardware diagnostics are only avaiable to the **RMA Official Firmware**.
-* **Firmware Optimizer:** Special deeper integration features specific to RMA firmware(compatible firmware version needed). for better optimization on both hardware and PC resource
-* **Health check:**built in slider health monitoring system to allow user check and know when to change slider module once gone bad than replace whole hardware(modular change only avaiable to Fat model)
-* **High Speed mode:** Allow a new optimize communication api with Faster Bandwith for more demanding use with many slider
-* **Noise Reduction & Noise Filter :** Allow smoother and longer usable lifespand of the slider with multiple configuration and type
+## 🔒 RMA Official Firmware Features
+Certain advanced functions and deep-level hardware diagnostics are only available when using **RMA Official Firmware** (Official Hardware).
+
+* **Firmware Optimizer:** Special deep-integration features specific to RMA firmware for better optimization of both hardware and PC resources.
+* **Health Check:** Built-in slider health monitoring system that allows users to check signal integrity and know exactly when to change a slider module before it fails (Modular replacement only available on 'Fat' models).
+* **High Speed Mode:** Enables a new optimized communication API with faster bandwidth for demanding setups with many sliders.
+* **Noise Reduction & Filter:** Extends the usable lifespan of sliders and provides smoother data using multiple configuration types.
+
 ## 🤝 Contributing
-We welcome feedback from the community! Feel Free to share your creation and tag me at @wolf33b(instagram). i will personally comment your creation and hightlight it!. OR if you find bugs in the release, please open an Issue. 
+We welcome feedback from the community! Feel free to share your creations and tag me at **@wolf33b** (Instagram). I will personally comment on your creation and highlight it!
 
-* **Bug Reports:** Accepted. might requred you to wait until both release are sync before you see the fix
-* **Feature Requests:** Consider to be implement, but priority is given to RMA user.
+If you find bugs in the release, please open an Issue.
 
+* **Bug Reports:** Accepted. (Note: You may need to wait until the Public release syncs with the Dev release to see the fix).
+* **Feature Requests:** Considered for implementation, but priority is given to RMA users.
+
+
+## 📜 License
+This software is licensed under the **RedWerewolf Studio Software License**.
+It is free to use, free to distribute, and will **always** remain free for its core functionality.
+*Please read the `LICENSE` file for full terms regarding tampering, redistribution, and attribution.*
 
 ---
