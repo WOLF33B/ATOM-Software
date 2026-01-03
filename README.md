@@ -14,7 +14,7 @@ ATOM operates on a **Staggered Release Model**.
 
 | Feature | RMA Owner (Official Hardware) | Public / DIY User |
 | :--- | :--- | :--- |
-| **Current Version** | 1.7.2.0 | 1.6.1.0 |
+| **Current Version** | 1.7.3.0 | 1.7.0.0 |
 | **Updates** | Immediate | Delayed (Catch-up cycle) |
 | **Firmware** | Official Proprietary Firmware | DIY / Third-party |
 | **RMA Extra Features** | ✅ Supported | 🔒 Not supported |
